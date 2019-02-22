@@ -1,0 +1,20 @@
+<div class="brands_filter">
+	<div class="clearfix">
+		<span class="cat_filters_button brands_all current"><span>Все бренды</span></span>
+		<span class="cat_filters_button brands_popular"><span>Популярные</span></span>
+
+		<div class="brands_letters">
+			<span class="inline-block">По первой букве:</span>
+			<!--%loop letters%--><span class="brands_letter inline-block" data-letter="<!--%letter%-->"><!--%letter%--></span><!--%end loop letters%-->
+		</div>
+	</div>
+
+	<ul class="brands clearfix">
+		<!--%loop brands%-->
+		<li data-letter="<!--%Letter%-->" data-popular="<!--%isPopular%-->">
+			<a class="hvr-glow" href="<!--%href%-->" title="<!--%Name%-->" style="background-image: url(<!--%image%-->);"></a>
+		</li>
+		<!--%end loop brands%-->
+	</ul>
+	<span class="close_brands_filter inline-block"><i></i><span>Свернуть</span></span>
+</div>
